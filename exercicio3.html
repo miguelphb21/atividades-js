@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-3</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 3 - ATIVIDADE-JS</h1>
+    <script>
+        window.alert('Declare duas variáveis idade1 e idade2, atribua valores numéricos a elas e calcule a diferença entre essas idades. ')
+        document.write('Declare duas variáveis idade1 e idade2, atribua valores numéricos a elas e calcule a diferença entre essas idades. <br><br>')
+        var idade1 = Number(window.prompt('Digite a primeira idade:'))
+        var idade2 = Number(window.prompt('Digite a segunda idade:'))
+        var subtracao = Number(idade1 - idade2)
+        var diferenca2 = idade1 > idade2 ?subtracao :subtracao *-1
+        var diferenca1 = idade1 <idade2? subtracao * -1: diferenca2
+        var diferenca = idade1 == idade2 ?'As idades são iguais':diferenca1
+        document.write('A diferença de anos das idades é igual a ' + diferenca)
+        </script>
+</body>
+</html>
