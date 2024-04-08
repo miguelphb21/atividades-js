@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício-6</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
         body{
             text-align: center;
+            background-color: rgb(4, 44, 0);
+        }
+        h1{
+            font-family: "Victor Mono", monospace;
+            font-size: 60px;
+        }
+        strong{
+            font-size: 40px;
+        }
+        div{
+            background-color: rgb(218, 218, 218);
+            border: dashed;
+            border-color: black;
+            margin: 82px;
+            font-size: 32px;
         }
     </style>
 </head>
 <body>
     <h1>Exercício 7 - ATIVIDADE-JS</h1>
-    <script>
-        window.alert('Atribua valores às variáveis altura e peso, e calcule o Índice de Massa Corporal (IMC) utilizando a fórmula IMC = peso / (altura * altura).')
-        document.writet('Atribua valores às variáveis altura e peso, e calcule o Índice de Massa Corporal (IMC) utilizando a fórmula IMC = peso / (altura * altura).<br><br>')
-        var peso = Number(window.prompt('Digite seu peso;'))
-        var altura = Number(window.prompt('Digite sua altura: '))
-        var imc = Number(peso / (altura * altura))
-        document.write(`Seu imc foi igual a ${imc.toFixed(2)}`)
-    </script>
+    <strong>RESULTADO</strong>
+    <div>
+        <script>
+            window.alert('Atribua valores às variáveis altura e peso, e calcule o Índice de Massa Corporal (IMC) utilizando a fórmula IMC = peso / (altura * altura).')
+            var altura = Number(window.prompt('Digite sua altura: '))
+            var imc = Number(peso / (altura * altura))
+            document.write(`Seu imc foi igual a ${imc.toFixed(2)}`)
+        </script>
+    </div>
 </body>
 </html>

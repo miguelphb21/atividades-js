@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício-12</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
         body{
             text-align: center;
+            background-color: rgb(4, 44, 0);
+        }
+        h1{
+            font-family: "Victor Mono", monospace;
+            font-size: 60px;
+        }
+        strong{
+            font-size: 40px;
+        }
+        div{
+            background-color: rgb(218, 218, 218);
+            border: dashed;
+            border-color: black;
+            margin: 82px;
+            font-size: 32px;
         }
     </style>
 </head>
 <body>
     <h1>Exercício 12 - ATIVIDADE-JS</h1>
-    <script>
-        window.alert('Atribua um salário mensal a salario e calcule o salário anual multiplicando-o por 12.')
-        document.write('Atribua um salário mensal a salario e calcule o salário anual multiplicando-o por 12. <br><br>')
-        var salarioMensal = Number(window.prompt('Digite o valor do seu sálario:'))
-        var salarioAnual = Number(salarioMensal*12)
-        document.write(`O valor do salario mensal por ano é igual a ${salarioAnual}`)
-    </script>
+    <strong>RESULTADO</strong>
+    <div>
+        <script>
+            window.alert('Atribua um salário mensal a salario e calcule o salário anual multiplicando-o por 12.')
+            var salarioMensal = Number(window.prompt('Digite o valor do seu sálario:'))
+            var salarioAnual = Number(salarioMensal*12)
+            document.write(`O valor do salario mensal por ano é igual a ${salarioAnual}`)
+        </script>
+    </div>
 </body>
 </html>

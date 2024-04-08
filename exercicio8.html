@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício-8</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
         body{
             text-align: center;
+            background-color: rgb(4, 44, 0);
+        }
+        h1{
+            font-family: "Victor Mono", monospace;
+            font-size: 60px;
+        }
+        strong{
+            font-size: 40px;
+        }
+        div{
+            background-color: rgb(218, 218, 218);
+            border: dashed;
+            border-color: black;
+            margin: 82px;
+            font-size: 32px;
         }
     </style>
 </head>
 <body>
     <h1>Exercício 8 - ATIVIDADE-JS</h1>
-    <script>
-        window.alert('Atribua um valor a precoProduto e aplique um desconto de 10%, armazenando o novo valor em precoComDesconto. ')
-        document.write('Atribua um valor a precoProduto e aplique um desconto de 10%, armazenando o novo valor em precoComDesconto. <br><br>')
-        var precoProduto = Number(window.prompt('Digite o preço do produto: '))
-        var desconto = Number(precoProduto*0.1)
-        var precoComDesconto = Number(precoProduto - desconto)
-        document.write(`O valor do produto é ${precoProduto} reais.Aplicando um desconto de 10%,ele ficará no valor de ${precoComDesconto} reais`)
-    </script>
+    <strong>RESULTADO</strong>
+    <div>
+        <script>
+            window.alert('Atribua um valor a precoProduto e aplique um desconto de 10%, armazenando o novo valor em precoComDesconto. ')
+            var precoProduto = Number(window.prompt('Digite o preço do produto: '))
+            var desconto = Number(precoProduto*0.1)
+            var precoComDesconto = Number(precoProduto - desconto)
+            document.write(`O valor do produto é ${precoProduto} reais.Aplicando um desconto de 10%,ele ficará no valor de ${precoComDesconto} reais`)
+        </script>
+    </div>
 </body>
 </html>

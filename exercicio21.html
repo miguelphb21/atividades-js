@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-21</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        body{
+            text-align: center;
+            background-color: rgb(4, 44, 0);
+        }
+        h1{
+            font-family: "Victor Mono", monospace;
+            font-size: 60px;
+        }
+        strong{
+            font-size: 40px;
+        }
+        div{
+            background-color: rgb(218, 218, 218);
+            border: dashed;
+            border-color: black;
+            margin: 82px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 21 - ATIVIDADE-JS</h1>
+    <strong>RESULTADO</strong>
+    <div>
+        <script>
+        window.alert('Declare três variáveis nota1, nota2 e peso1 com valores numéricos representando notas e pesos. Calcule a média ponderada das notas.')
+        var nota1 = Number(window.prompt('Informe a primeira nota:'))
+        var peso1 = Number(window.prompt('Informe a quantidade do peso da primeira nota:'))
+        var nota2 = Number(window.prompt('Informe a segunda nota:'))
+        var peso2 = Number(window.prompt('Informe a quantidade do peso da segunda nota:'))
+        var mediap = Number((nota1*peso1) + (nota2*peso2) / peso1 + peso2)
+        document.write(`O valor da media ponderada das notas é igual a ${mediap}`)
+        </script> 
+    </div>
+</body>
+</html>
